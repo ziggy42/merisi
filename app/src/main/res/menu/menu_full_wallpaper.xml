@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context="com.andreapivetta.changemywall.FullWallpaperActivity">
+
+    <item android:id="@+id/action_share"
+        android:title="@string/share"
+        yourapp:showAsAction="ifRoom"
+        yourapp:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+
+</menu>

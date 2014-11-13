@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_behaviore"
+        android:title="@string/pref_behavior_title" >
+        <CheckBoxPreference
+            android:key="pref_key_notifications"
+            android:summary="@string/preference_notification_summary"
+            android:title="@string/preference_notifications_title" />
+
+        <Preference
+            android:key="pref_key_restore"
+            android:title="@string/restore_initial_srttings"
+            android:summary="@string/restore_initial_srttings_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_wallpapers"
+        android:title="@string/wallpapers">
+
+        <Preference
+            android:key="pref_key_clear_library"
+            android:title="@string/clear_library"
+            android:summary="@string/clear_library_summary" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

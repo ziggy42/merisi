@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Merisi</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="tabs_names">
+        <item>My Library</item>
+        <item>Toplist</item>
+        <item>Random</item>
+    </string-array>
+
+    <!-- General -->
+    <string name="no_connection">I can\'t download the wallpapers. Are you sure your internet connection is OK?</string>
+    <string name="retry">Retry</string>
+
+    <!-- HomeFragment -->
+    <string name="choose_single_image">Add another Image</string>
+    <string name="wallpaper_set">Wallpaper set successfully</string>
+    <string name="delete_wallpaper">Delete this wallpaper?</string>
+    <string name="wallpaper_contentdescriptor" translatable="false">Wallpaper</string>
+    <string name="search">Search…</string>
+
+    <!-- MainActivity -->
+    <string name="share_application">Share Merisi</string>
+    <string name="action_about" translatable="false">About</string>
+    <string name="egzo_twitter" translatable="false">Icon courtesy of <a href="https://twitter.com/EgBaj">@EgBaj</a></string>
+    <string name="my_twitter" translatable="false">by <a href="https://twitter.com/Pivix00">@Pivix00</a></string>
+    <string name="heart_image_contentdescriptor" translatable="false">Heart Image</string>
+    <string name="rate">Rate</string>
+
+    <!-- MyLibrary -->
+    <string name="schedule">Schedule</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="set_as">Set as…</string>
+
+    <!-- ProgramDialog -->
+    <string name="change_wallpaper_switch">Change Wallpaper</string>
+    <string name="every_hour">Every Hour</string>
+    <string name="every_two">Every Two Hours</string>
+    <string name="every_eight">Every Eight Hours</string>
+    <string name="every_day">Every Day</string>
+    <string name="every_two_days">Every 2 Days</string>
+    <string name="every_three_days">Every Three Days</string>
+    <string name="done">Done</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="pref_behavior_title">Behavior</string>
+    <string name="preference_notifications_title">Notifications</string>
+    <string name="preference_notification_summary">Notifications enabled</string>
+    <string name="restore_initial_srttings">Restore Initial Settings</string>
+    <string name="restore_initial_srttings_summary">Do you remembar all those \'dont-ask-me-again\' dialogs?</string>
+    <string name="wallpapers">Wallpapers</string>
+    <string name="clear_library">Clear Library</string>
+    <string name="clear_library_summary">Delete all your saved wallpapers</string>
+    <string name="restore_preferences_dialog_title">Do you want to restore the initial settings?</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="delete_library_dialog_title">Do you really want to delete all your library?</string>
+    <string name="cant_undo">Are you really, really sure? I mean…really?</string>
+
+    <!-- FullWallpaperActivity -->
+    <string name="title_activity_full_wallpaper"></string>
+    <string name="full_wall_contentdescription" translatable="false">Full Wallpaper ImageView</string>
+    <string name="set_as_maiusc">SET AS</string>
+    <string name="share">Share Wallpaper</string>
+    <string name="download_button_contentdescriptor" translatable="false">Donwload Button</string>
+    <string name="res_too_high_explanation">The resolution of this image is too high for your device. You can still use it as wallpaper.</string>
+    <string name="res_too_high">Resolution too High</string>
+    <string name="got_it">Got It</string>
+    <string name="dont_show_this_again">Don\'t show this again</string>
+    <string name="download">Download</string>
+    <string name="download_wallpaper">Download this Wallpaper?</string>
+
+    <!-- Search -->
+    <string name="no_more_wallpapers">No More Wallpapers</string>
+    <string name="search_button_content_descriptor" translatable="false">Search Button</string>
+    <string name="title_activity_search">Search</string>
+
+    <!-- ZoomedActivity-->
+    <string name="title_activity_zoomed" translatable="false"/>
+</resources>

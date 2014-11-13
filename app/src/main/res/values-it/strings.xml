@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Impostazioni</string>
+
+    <string-array name="tabs_names">
+        <item>Libreria</item>
+        <item>Top Wallpaper</item>
+        <item>Casuali</item>
+    </string-array>
+
+    <!-- General -->
+    <string name="no_connection">Non riesco a scaricare i wallpaper. Sicuro che la tua connessione sia ok?</string>
+    <string name="retry">Riprova</string>
+
+    <!-- HomeFragment -->
+    <string name="choose_single_image">Aggiungi Immagine</string>
+    <string name="wallpaper_set">Wallpaper impostato</string>
+    <string name="delete_wallpaper">Eliminare questo wallpaper?</string>
+    <string name="search">Cerca…</string>
+
+    <!-- MainActivity -->
+    <string name="share_application">Condividi Merisi</string>
+    <string name="rate">Valuta</string>
+
+    <!-- MyLibrary -->
+    <string name="schedule">Programma</string>
+    <string name="cancel">Annulla</string>
+    <string name="delete">Elimina</string>
+    <string name="set_as">Imposta come…</string>
+
+    <!-- ProgramDialog -->
+    <string name="change_wallpaper_switch">Cambia Wallpaper</string>
+    <string name="every_hour">Ogni ora</string>
+    <string name="every_two">Ogni 2 ore</string>
+    <string name="every_eight">Ogni 8 ore</string>
+    <string name="every_day">Ogni giornoy</string>
+    <string name="every_two_days">Ogni 2 giorni</string>
+    <string name="every_three_days">Ogni 3 giorni</string>
+    <string name="done">Fatto</string>
+    <string name="title_activity_settings">Impostazioni</string>
+
+    <!-- Settings -->
+    <string name="pref_behavior_title">Comportamento</string>
+    <string name="preference_notifications_title">Notifiche</string>
+    <string name="preference_notification_summary">Notifiche abilitate</string>
+    <string name="restore_initial_srttings">Ripristina impostazioni iniziali</string>
+    <string name="restore_initial_srttings_summary">Ricordi tutti quei \'non-chiedermelo-di-nuovo\'?</string>
+    <string name="wallpapers">Wallpaper</string>
+    <string name="clear_library">Svuota Libreria</string>
+    <string name="clear_library_summary">Elimina tutti i wallpaper che hai salvato</string>
+    <string name="restore_preferences_dialog_title">Vuoi ripristinare le impostazioni iniziali?</string>
+    <string name="delete_library_dialog_title">Davvero vuoi svuotare la tua libreria?</string>
+    <string name="cant_undo">Sei davvero, davvero sicuro? Cioè…davvero?</string>
+
+    <!-- FullWallpaperActivity -->
+    <string name="title_activity_full_wallpaper"/>
+    <string name="set_as_maiusc">IMPOSTA</string>
+    <string name="share">Condividi Wallpaper</string>
+    <string name="res_too_high_explanation">La risoluzione di questa immagine è troppo alta per il tuo telefono. Puoi comunque usarla come wallpaper.</string>
+    <string name="res_too_high">Risoluzione troppo alta</string>
+    <string name="got_it">Capito</string>
+    <string name="dont_show_this_again">Non mostrare di nuovo</string>
+    <string name="download">Download</string>
+    <string name="download_wallpaper">Scarica questo Wallpaper?</string>
+
+    <!-- Search -->
+    <string name="no_more_wallpapers">Wallpaper esauriti</string>
+    <string name="title_activity_search">Cerca</string>
+
+</resources>
