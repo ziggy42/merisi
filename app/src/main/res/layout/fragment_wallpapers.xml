@@ -13,6 +13,7 @@
         android:id="@+id/loadingProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/circle_button"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:indeterminate="true" />

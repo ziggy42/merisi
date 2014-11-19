@@ -39,6 +39,9 @@ public class Wallpaper implements Parcelable{
     public boolean isResTooHigh() {
         int[] maxSize = new int[1];
         GLES10.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxSize, 0);
+
+        Log.i("RESOLUTION", ": " + maxSize[0]);
+
         if (maxSize[0] == 0) return false;
 
         return (maxSize[0] < width) || (maxSize[0] < height);
