@@ -122,7 +122,7 @@ public class MainActivity extends ActionBarActivity {
                 public void onClick(View v) {
                     Intent i = new Intent(
                             Intent.ACTION_VIEW,
-                            Uri.parse("https://play.google.com/store/search?q=andrea+pivetta&c=apps"));
+                            Uri.parse("http://alpha.wallhaven.cc/"));
                     i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(i);
                 }
@@ -132,7 +132,7 @@ public class MainActivity extends ActionBarActivity {
         } else if (item.getItemId() == R.id.action_rate) {
             Intent i = new Intent(
                     Intent.ACTION_VIEW,
-                    Uri.parse("market://details?id=com.andreapivetta.changemywall"));
+                    Uri.parse("http://www.amazon.com/Andrea-Pivetta-Merisi/dp/B00PPP5JYC/ref=sr_1_11?ie=UTF8&qid=1416429180&sr=8-11&keywords=merisi"));
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
         }
