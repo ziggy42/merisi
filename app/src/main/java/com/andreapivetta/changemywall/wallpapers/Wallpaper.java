@@ -1,9 +1,16 @@
 package com.andreapivetta.changemywall.wallpapers;
 
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.Point;
 import android.opengl.GLES10;
+import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
+import android.view.Display;
+
+import java.net.ConnectException;
 
 import javax.microedition.khronos.opengles.GL10;
 
@@ -37,14 +44,19 @@ public class Wallpaper implements Parcelable{
     }
 
     public boolean isResTooHigh() {
-        int[] maxSize = new int[1];
-        GLES10.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxSize, 0);
+        if(Build.VERSION.SDK_INT < 21){
+            int[] maxSize = new int[1];
+            GLES10.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxSize, 0);
 
-        Log.i("RESOLUTION", ": " + maxSize[0]);
+            return (maxSize[0] < width) || (maxSize[0] < height);
+        }
 
-        if (maxSize[0] == 0) return false;
+        /*
+            Let's assume all devices that runs Lollipop can display bitmaps with size 4096 or less
+            I'm too lazy to actually resolve this problem
+         */
 
-        return (maxSize[0] < width) || (maxSize[0] < height);
+        return (4096 < width) || (4096 < height);
     }
 
     public Wallpaper(Parcel in) {

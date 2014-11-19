@@ -245,8 +245,7 @@ public class FullWallpaperActivity extends ActionBarActivity {
     private Intent getDefaultIntent() {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.putExtra(Intent.EXTRA_TEXT,
-                "Look! " + mWallpaper.fullURL + " I've found it with this amazing app: " +
-                        "https://play.google.com/store/apps/details?id=com.andreapivetta.changemywall");
+                "Look! " + mWallpaper.fullURL + " I've found it with this amazing app: http://www.amazon.com/Andrea-Pivetta-Merisi/dp/B00PPP5JYC/");
         intent.setType("text/plain");
         return intent;
     }
