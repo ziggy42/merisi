@@ -29,6 +29,8 @@ public class MainActivity extends ActionBarActivity {
 
     private ImageButton searchImageButton;
 
+    public boolean isUp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    void searchDown() {
+    public void searchDown() {
         final RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) searchImageButton.getLayoutParams();
         ValueAnimator downAnimator = ValueAnimator.ofInt(params.bottomMargin, -120);
         downAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -64,9 +66,11 @@ public class MainActivity extends ActionBarActivity {
         });
         downAnimator.setDuration(300);
         downAnimator.start();
+
+        isUp = false;
     }
 
-    void searchUp() {
+    public void searchUp() {
         final RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) searchImageButton.getLayoutParams();
         ValueAnimator upAnimator = ValueAnimator.ofInt(params.bottomMargin, 20);
         upAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -78,6 +82,8 @@ public class MainActivity extends ActionBarActivity {
         });
         upAnimator.setDuration(300);
         upAnimator.start();
+
+        isUp = true;
     }
 
     @Override
@@ -95,8 +101,7 @@ public class MainActivity extends ActionBarActivity {
     private Intent getDefaultIntent() {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.putExtra(Intent.EXTRA_TEXT,
-                "Take a look at this amazing app " +
-                        "https://play.google.com/store/apps/details?id=com.andreapivetta.changemywall");
+                "Take a look at this amazing app http://www.amazon.com/Andrea-Pivetta-Merisi/dp/B00PPP5JYC/");
         intent.setType("text/plain");
         return intent;
     }

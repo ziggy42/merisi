@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ProgressBar;
 
+import com.andreapivetta.changemywall.MainActivity;
 import com.andreapivetta.changemywall.R;
 import com.andreapivetta.changemywall.Utilities;
 import com.andreapivetta.changemywall.adapters.WallpaperAdapter;
@@ -93,6 +95,17 @@ public class WallpapersFragment extends Fragment {
                         new setUpWallpapersArray().execute(null, null, null);
                     }
                 }
+
+                if(dy > 0) {
+                    if(((MainActivity) getActivity()).isUp) {
+                        ((MainActivity) getActivity()).searchDown();
+                    }
+                } else {
+                    if(!((MainActivity) getActivity()).isUp) {
+                        ((MainActivity) getActivity()).searchUp();
+                    }
+                }
+
             }
         });
 
@@ -138,6 +151,8 @@ public class WallpapersFragment extends Fragment {
                     mDialog.dismiss();
                 }
             });
+
+            builder.setCancelable(false);
 
             mDialog = builder.setView(dialogView).create();
             mDialog.show();
