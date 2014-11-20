@@ -224,7 +224,7 @@ public class FullWallpaperActivity extends ActionBarActivity {
         mNotifyManager.notify(mSharedPreferences.getInt(Utilities.IMAGE_NAME, 1), mBuilder.build());
     }
 
-    public Uri getImageUri(Context inContext, Bitmap inImage) {
+    Uri getImageUri(Context inContext, Bitmap inImage) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
         String path = MediaStore.Images.Media.insertImage(inContext.getContentResolver(), inImage, "Title", null);
@@ -250,7 +250,7 @@ public class FullWallpaperActivity extends ActionBarActivity {
         return intent;
     }
 
-    public class DownloadAsyncTask extends AsyncTask<String, Void, Boolean> {
+    private class DownloadAsyncTask extends AsyncTask<String, Void, Boolean> {
 
         @Override
         protected Boolean doInBackground(String... name) {

@@ -61,9 +61,8 @@
     <string name="cant_undo">Are you really, really sure? I mean…really?</string>
 
     <!-- FullWallpaperActivity -->
-    <string name="title_activity_full_wallpaper"></string>
+    <string name="title_activity_full_wallpaper"/>
     <string name="full_wall_contentdescription" translatable="false">Full Wallpaper ImageView</string>
-    <string name="set_as_maiusc">SET AS</string>
     <string name="share">Share Wallpaper</string>
     <string name="download_button_contentdescriptor" translatable="false">Donwload Button</string>
     <string name="res_too_high_explanation">The resolution of this image is too high for your device. You can still use it as wallpaper.</string>

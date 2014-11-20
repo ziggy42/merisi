@@ -34,7 +34,7 @@
     <string name="every_hour">Ogni ora</string>
     <string name="every_two">Ogni 2 ore</string>
     <string name="every_eight">Ogni 8 ore</string>
-    <string name="every_day">Ogni giornoy</string>
+    <string name="every_day">Ogni giorno</string>
     <string name="every_two_days">Ogni 2 giorni</string>
     <string name="every_three_days">Ogni 3 giorni</string>
     <string name="done">Fatto</string>
@@ -55,7 +55,6 @@
 
     <!-- FullWallpaperActivity -->
     <string name="title_activity_full_wallpaper"/>
-    <string name="set_as_maiusc">IMPOSTA</string>
     <string name="share">Condividi Wallpaper</string>
     <string name="res_too_high_explanation">La risoluzione di questa immagine è troppo alta per il tuo telefono. Puoi comunque usarla come wallpaper.</string>
     <string name="res_too_high">Risoluzione troppo alta</string>

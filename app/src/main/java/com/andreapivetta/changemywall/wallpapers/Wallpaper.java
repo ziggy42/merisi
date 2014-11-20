@@ -1,16 +1,11 @@
 package com.andreapivetta.changemywall.wallpapers;
 
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.Point;
 import android.opengl.GLES10;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Log;
-import android.view.Display;
 
-import java.net.ConnectException;
+import com.andreapivetta.changemywall.Utilities;
 
 import javax.microedition.khronos.opengles.GL10;
 
@@ -24,7 +19,7 @@ public class Wallpaper implements Parcelable{
         this.thumbURL = thumbURL;
 
         String url = "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-" + thumbURL.substring(thumbURL.indexOf("-") + 1);
-        if (!Util.exists(url)) {
+        if (!Utilities.exists(url)) {
             url = url.replace(".jpg", ".png");
         }
 

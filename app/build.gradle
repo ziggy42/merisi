@@ -6,9 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.andreapivetta.changemywall"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 21
-        versionCode 3
+        versionCode 4
         versionName "0.2.1"
     }
     buildTypes {
