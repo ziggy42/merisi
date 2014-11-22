@@ -8,9 +8,9 @@
         android:id="@+id/setRandomBackgroundButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/homeLRmargin"
+        android:layout_marginRight="@dimen/homeLRmargin"
+        android:layout_marginTop="@dimen/homeTBmargin"
         android:background="@drawable/button_background"
         android:text="@string/schedule" />
 
@@ -19,9 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/setRandomBackgroundButton"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/homeLRmargin"
+        android:layout_marginRight="@dimen/homeLRmargin"
+        android:layout_marginTop="@dimen/homeTBmargin"
         android:background="@drawable/button_background"
         android:text="@string/choose_single_image" />
 
@@ -30,8 +30,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/chooseImageButton"
-        android:layout_marginTop="20dp"
-        android:columnWidth="100dp"
+        android:layout_marginTop="@dimen/homeTBmargin"
+        android:columnWidth="@dimen/colWidth"
         android:drawSelectorOnTop="true"
         android:numColumns="auto_fit"
         android:stretchMode="columnWidth" />

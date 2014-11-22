@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="colWidth">100dp</dimen>
+    <dimen name="homeLRmargin">20dp</dimen>
+    <dimen name="homeTBmargin">20dp</dimen>
+
+</resources>
