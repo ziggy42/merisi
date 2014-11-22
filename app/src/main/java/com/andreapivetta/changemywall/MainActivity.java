@@ -13,6 +13,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 
 import com.andreapivetta.changemywall.fragments.HomeFragment;
 import com.andreapivetta.changemywall.fragments.WallpapersFragment;
+import com.andreapivetta.changemywall.tabs.SlidingTabLayout;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -44,6 +46,9 @@ public class MainActivity extends ActionBarActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         viewPager.setAdapter(new MyFragmentPagerAdapter());
 
+        SlidingTabLayout slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
+        slidingTabLayout.setViewPager(viewPager);
+
         searchImageButton = (ImageButton) findViewById(R.id.searchButton);
         searchImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +57,21 @@ public class MainActivity extends ActionBarActivity {
                 overridePendingTransition(R.anim.push_left_in, 0);
             }
         });
+    }
+
+    public void pageChangedHandler(int pNumber) {
+        Log.i("CURRENT", pNumber + "");
+        switch (pNumber) {
+            case 0:
+                searchDown();
+                break;
+            case 1:
+                searchUp();
+                break;
+            case 2:
+                searchUp();
+                break;
+        }
     }
 
     public void searchDown() {
@@ -185,13 +205,9 @@ public class MainActivity extends ActionBarActivity {
             }
 
             if (position == 0) {
-                searchDown();
-
                 if(((HomeFragment) mCurrentFragment).gridViewAdapter != null)
                     ((HomeFragment) mCurrentFragment).loadImages();
-
             }
-            if (position == 1) searchUp();
 
             super.setPrimaryItem(container, position, object);
         }

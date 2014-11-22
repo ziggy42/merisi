@@ -65,15 +65,8 @@ public class WallpapersFragment extends Fragment {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_wallpapers, container, false);
 
-        int nColumns;
-        if (getResources().getBoolean(R.bool.isTablet)) {
-            nColumns = 3;
-        } else {
-            nColumns = 2;
-        }
-
         mWallpaperAdapter = new WallpaperAdapter(wallpaperList, getActivity());
-        mGridLayoutManager = new GridLayoutManager(getActivity(), nColumns);
+        mGridLayoutManager = new GridLayoutManager(getActivity(), getResources().getInteger(R.integer.nCol));
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.topListRecyclerView);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(mGridLayoutManager);

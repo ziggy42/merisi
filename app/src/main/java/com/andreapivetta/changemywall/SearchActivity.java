@@ -64,7 +64,7 @@ public class SearchActivity extends ActionBarActivity {
 
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.searchedListRecyclerView);
         mWallpaperAdapter = new WallpaperAdapter(wallpaperList, this);
-        mSearchGridLayoutManager = new GridLayoutManager(this, 2);
+        mSearchGridLayoutManager = new GridLayoutManager(this, getResources().getInteger(R.integer.nCol));
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(mSearchGridLayoutManager);
         mRecyclerView.setAdapter(mWallpaperAdapter);
