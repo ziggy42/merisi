@@ -54,7 +54,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.View
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         Picasso.with(context)
                 .load(mDataset.get(position).thumbURL)
-                .placeholder(R.drawable.placeholder)
+                .placeholder(R.drawable.placeholderrect)
                 .into(holder.wallpaperImageView);
 
         holder.wallpaperFrameLayout.setOnClickListener(new View.OnClickListener() {
