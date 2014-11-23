@@ -81,7 +81,7 @@ public class WallpapersFragment extends Fragment {
                 pastVisibleItems = mGridLayoutManager.findFirstVisibleItemPosition() + 1;
 
                 if (loading) {
-                    if ((visibleItemCount + pastVisibleItems) >= totalItemCount) {
+                    if ((visibleItemCount + pastVisibleItems) >= totalItemCount - 10) {
                         loading = false;
                         mSmoothProgressbar.setVisibility(View.VISIBLE);
                         new setUpWallpapersArray().execute(null, null, null);

@@ -79,4 +79,5 @@
 
     <!-- ZoomedActivity-->
     <string name="title_activity_zoomed" translatable="false"/>
+    <string name="zoom_image_content_descriptor">Zoom ImageButton</string>
 </resources>

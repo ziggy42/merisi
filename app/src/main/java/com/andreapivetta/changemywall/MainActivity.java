@@ -13,7 +13,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.text.method.LinkMovementMethod;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -60,7 +59,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void pageChangedHandler(int pNumber) {
-        Log.i("CURRENT", pNumber + "");
         switch (pNumber) {
             case 0:
                 searchDown();

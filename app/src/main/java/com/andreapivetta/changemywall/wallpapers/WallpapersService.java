@@ -32,6 +32,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 
 
@@ -76,8 +77,11 @@ public class WallpapersService {
 
                 list.add(new Wallpaper(thumbSrc, res.text()));
             }
+        } catch (SocketTimeoutException se) {
+            Log.e("WallpaperService SOCKETEx", se.toString());
+            return getWallpapers(query);
         } catch (IOException e) {
-            Log.e("WallpaperService", e.toString());
+            Log.e("WallpaperService IOEx", e.toString());
             return null;
         }
 
